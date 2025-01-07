@@ -9,12 +9,12 @@ const picturePaths = [
     "https://img2.wallspic.com/previews/8/1/6/9/7/179618/179618-spider_man-superhero-television-spider_man_no_way_home-spider_man_homecoming-x750.jpg",
     "https://img3.wallspic.com/previews/7/3/6/9/7/179637/179637-freestyle_motocross-motorcycle-ktm-dakar_rally-off_road_racing-x750.jpg",
     "https://img2.wallspic.com/previews/2/1/8/9/7/179812/179812-summit-soundbar-television-bluetooth-usb-x750.jpg",
-    "https://img2.wallspic.com/previews/9/6/3/9/7/179369/179369-woman-earth-atmosphere-world-light-x750.jpg",
-    "https://img1.wallspic.com/previews/2/1/3/9/7/179312/179312-cherry_blossom-prunus-flower-plant-petal-x750.jpg",
-    "https://img1.wallspic.com/previews/8/2/4/9/7/179428/179428-visual_arts-graphic_design-purple-entertainment-art-x750.jpg",
-    "https://img2.wallspic.com/previews/1/4/8/9/7/179841/179841-astronaut_sitting-astronaut-outer_space-space_station-space_exploration-x750.jpg",
-    "https://img3.wallspic.com/previews/6/6/9/8/7/178966/178966-light-water-cloud-plant-water_resources-x750.jpg",
-    "https://img3.wallspic.com/previews/0/5/1/9/7/179150/179150-glowing_purge_mask-mask-plant-purple-fun-x750.jpg"
+    "https://img1.wallspic.com/previews/8/6/5/9/7/179568/179568-companion_dog-american_cocker_spaniel-border_collie-cavalier_king_charles_spaniel-alaskan_klee_kai-x750.jpg",
+    "https://img3.wallspic.com/previews/7/3/3/9/7/179337/179337-8k_nature-nature-tablet-water-water_resources-x750.jpg",
+    "https://img1.wallspic.com/previews/1/4/3/9/7/179341/179341-bryce_canyon_national_park-zion_national_park-national_park-park-bryce_canyon_zion_national_park-x750.jpg",
+    "https://img3.wallspic.com/previews/2/8/3/9/7/179382/179382-wood-huawei-harmonyos-tablet-harmonyos_4-x750.jpg",
+    "https://img1.wallspic.com/previews/5/6/1/9/7/179165/179165-forest-damaksnis-atmosphere-plant-light-x750.jpg",
+    "https://img1.wallspic.com/previews/2/4/1/9/7/179142/179142-nebulosa_bubble-nebula-star-bubble_nebula-hubble_space_telescope-x750.jpg"
 ];
 
 // DISPLAYING IMAGES
@@ -26,8 +26,8 @@ function displayingImages() {
         newImage.src = picturePaths[i];
 
         imagesContainer.appendChild(newImage);
-        imagesContainer.firstElementChild.classList.add('image-itself-active');
     };
+    imagesContainer.firstElementChild.classList.add('image-itself-active');
 };
 
 displayingImages();
