@@ -5,16 +5,16 @@ const nextButton = document.getElementById('nextButton');
 let imageIndexCounter = 0;
 let imagePositionCounter = 0;
 const picturePaths = [
-    "https://images.unsplash.com/photo-1516117172878-fd2c41f4a759",
-    "https://images.unsplash.com/photo-1532009324734-20a7a5813719",
-    "https://images.unsplash.com/photo-1524429656589-6633a470097c",
-    "https://images.unsplash.com/photo-1530224264768-7ff8c1789d79",
-    "https://images.unsplash.com/photo-1569092052906-ff3762bf3f48",
-    "https://images.unsplash.com/photo-1541698444083-023c97d3f4b6",
-    "https://images.unsplash.com/photo-1574169208507-8437614484d9",
-    "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
-    "https://images.unsplash.com/photo-1513938709626-033611b8cc03",
-    "https://images.unsplash.com/photo-1506765515384-028b60a970df"
+    "https://img1.wallspic.com/previews/6/3/0/9/7/179036/179036-umbrella-pink-magenta-city-midnight-x750.jpg",
+    "https://img2.wallspic.com/previews/8/1/6/9/7/179618/179618-spider_man-superhero-television-spider_man_no_way_home-spider_man_homecoming-x750.jpg",
+    "https://img3.wallspic.com/previews/7/3/6/9/7/179637/179637-freestyle_motocross-motorcycle-ktm-dakar_rally-off_road_racing-x750.jpg",
+    "https://img2.wallspic.com/previews/2/1/8/9/7/179812/179812-summit-soundbar-television-bluetooth-usb-x750.jpg",
+    "https://img2.wallspic.com/previews/9/6/3/9/7/179369/179369-woman-earth-atmosphere-world-light-x750.jpg",
+    "https://img1.wallspic.com/previews/2/1/3/9/7/179312/179312-cherry_blossom-prunus-flower-plant-petal-x750.jpg",
+    "https://img1.wallspic.com/previews/8/2/4/9/7/179428/179428-visual_arts-graphic_design-purple-entertainment-art-x750.jpg",
+    "https://img2.wallspic.com/previews/1/4/8/9/7/179841/179841-astronaut_sitting-astronaut-outer_space-space_station-space_exploration-x750.jpg",
+    "https://img3.wallspic.com/previews/6/6/9/8/7/178966/178966-light-water-cloud-plant-water_resources-x750.jpg",
+    "https://img3.wallspic.com/previews/0/5/1/9/7/179150/179150-glowing_purge_mask-mask-plant-purple-fun-x750.jpg"
 ];
 
 // DISPLAYING IMAGES
