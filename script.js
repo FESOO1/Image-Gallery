@@ -71,3 +71,26 @@ nextButton.addEventListener('click', () => {
         nextButton.disabled = true;
     };
 });
+
+//
+
+const imagesThemselves = imagesContainer.querySelectorAll('img');
+
+for (let i = 0; i < imagesThemselves.length; i++) {
+    imagesThemselves[i].addEventListener('click', () => {
+        for (const imagesItself of imagesThemselves) {
+            imagesItself.classList.remove('image-itself-active');
+        };
+        imagesThemselves[i].classList.add('image-itself-active');
+        
+        imagePositionCounter = 310 * i;
+        imagesThemselves[0].style.marginLeft = `-${imagePositionCounter}px`;
+        
+        // UPDATING THE VALUES
+        imageIndexCounter = i;
+
+        if (i > 0) {
+            prevButton.disabled = false;
+        };
+    });
+};

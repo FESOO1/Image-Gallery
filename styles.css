@@ -40,6 +40,7 @@ body {
     opacity: 0.1;
     border: 1px solid rgba(255,255,255,0.08);
     scale: 0.8;
+    cursor: pointer;
     transition: border 400ms, opacity 400ms, margin 400ms, scale 400ms;
 }
 
