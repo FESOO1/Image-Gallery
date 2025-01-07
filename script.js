@@ -1,4 +1,3 @@
-/* const imagesThemselves = document.querySelectorAll('.image-itself'); */
 const imagesContainer = document.querySelector('.images-container');
 const prevButton = document.getElementById('prevButton');
 const nextButton = document.getElementById('nextButton');
@@ -72,15 +71,25 @@ nextButton.addEventListener('click', () => {
     };
 });
 
-//
-
+// IMAGES THEMSELVES
 const imagesThemselves = imagesContainer.querySelectorAll('img');
 
 for (let i = 0; i < imagesThemselves.length; i++) {
+    // HOVER
+    imagesThemselves[i].addEventListener('mouseleave', () => {
+        imagesThemselves[i].classList.remove('image-itself-hover');
+    });
+    imagesThemselves[i].addEventListener('mouseenter', () => {
+        if (!imagesThemselves[i].classList.contains('image-itself-active')) {
+            imagesThemselves[i].classList.add('image-itself-hover');
+        };
+    });
+    // CLICK
     imagesThemselves[i].addEventListener('click', () => {
         for (const imagesItself of imagesThemselves) {
             imagesItself.classList.remove('image-itself-active');
         };
+        imagesThemselves[i].classList.remove('image-itself-hover');
         imagesThemselves[i].classList.add('image-itself-active');
         
         imagePositionCounter = 310 * i;
@@ -89,8 +98,37 @@ for (let i = 0; i < imagesThemselves.length; i++) {
         // UPDATING THE VALUES
         imageIndexCounter = i;
 
-        if (i > 0) {
-            prevButton.disabled = false;
+        switch (i) {
+            case 0:
+                prevButton.disabled = true;
+                break;
+            case 1:
+                prevButton.disabled = false;
+                break;
+            case 2:
+                prevButton.disabled = false;
+                break;
+            case 3:
+                prevButton.disabled = false;
+                break;
+            case 4:
+                prevButton.disabled = false;
+                break;
+            case imagesThemselves.length - 1:
+                nextButton.disabled = true;
+                break;
+            case imagesThemselves.length - 2:
+                nextButton.disabled = false;
+                break;
+            case imagesThemselves.length - 3:
+                nextButton.disabled = false;
+                break;
+            case imagesThemselves.length - 4:
+                nextButton.disabled = false;
+                break;
+            case imagesThemselves.length - 5:
+                nextButton.disabled = false;
+                break;
         };
     });
 };
