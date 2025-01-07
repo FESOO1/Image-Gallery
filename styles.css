@@ -33,7 +33,16 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0.5rem;
+    opacity: 0.1;
+    border: 1px solid rgba(255,255,255,0.08);
+    scale: 0.8;
+    transition: border 400ms, opacity 400ms, margin 400ms, scale 400ms;
+}
+
+.image-itself-active {
+    border: 1px solid rgba(255,255,255,1);
+    opacity: 1;
+    scale: 1;
 }
 
 /* CONTROL BUTTONS */
@@ -55,6 +64,11 @@ body {
     border-top: 1px solid rgba(255,255,255,0.08);
     box-shadow: 0 1px 0 black;
     cursor: pointer;
+}
+
+.control-button-itself:disabled {
+    pointer-events: none;
+    opacity: 0;
 }
 
 .control-button-itself:hover {
